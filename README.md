@@ -66,3 +66,79 @@ https://drive.google.com/file/d/1gyq1fqHNdyRWkpdaYyb2J1BEy1GCk8Fa/view?usp=shari
 
 
 
+
+
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Running the App](#running-the-app)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) (install it globally with `npm install -g expo-cli`)
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd your-repo-name
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+## Running the App
+
+To start the development server, run:
+
+```bash
+npm start
+```
+
+This will open a new browser tab with the Expo developer tools. You can scan the QR code with the Expo Go app on your mobile device to see your app in action.
+
+## Development
+
+To make changes to your app, simply edit the files in the `App.js` (or any other component file). The app will automatically reload to reflect your changes.
+
+### Running on a Simulator
+
+If you prefer to run your app in an iOS or Android simulator, you can use:
+
+- For iOS: Press `i`
+- For Android: Press `a`
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add your feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+
+Feel free to reach out if you have any questions or need assistance!
+
+
+
