@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Aforro
 
-## Get started
+Designed to provides functionalities such as user authentication, product categorization, and a shopping cart. The app integrates with a mock API to simulate backend operations.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## APK Link
 
-2. Start the app
+You can download the APK from here - 
 
-   ```bash
-    npx expo start
-   ```
+https://drive.google.com/file/d/1gyq1fqHNdyRWkpdaYyb2J1BEy1GCk8Fa/view?usp=sharing
+## Features
 
-In the output, you'll find options to open the app in a
+- **User Authentication**: Login and logout functionalities using a mock API.
+    
+    - Use the email from the given dummy API for login : 
+        
+        - "email": "Sincere@april.biz",
+        - "email": "Shanna@melissa.tv",
+    
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    For now I have only added the email field as the dummy API didn't had passwords , but I can implement complete Authentication with real users 
+    
+    - Can integrate JWT tokens (access and refresh) if needed for better security.
+    - Can implement form validation with Formik and yup, also have worked with Zod validation.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+- **Home Screen**: Displays categories, promotional banners, and a search bar.
+    
+    - Implemented carousel using flatlist for now.  Can be done more elegantly using react-native-snap-carousel.
 
-When you're ready, run:
+    - Search bar feature implemented and used debounce for better user experience.
 
-```bash
-npm run reset-project
-```
+    - Request for current users location to show the current location on top.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Add to Cart**: Implemented the add to cart feature so that items that a user selects can be added to a cart.
+    
+    - Used context to store the state of the cart 
+    - Can implement redux store also.
+    - Currently not able to implement different cart for different users due to lack of a backend but can be done.
 
-## Learn more
+- **Checkout**: I can integrate a Payment gateway using stripe or razorpay. _(Not implemented in this app)_
+ 
 
-To learn more about developing your project with Expo, look at the following resources:
+**Cart Page**: Display items that have been added to the cart, along with their details 
+(name, image, and quantity).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
 
-Join our community of developers creating universal apps.
+**Profile Page**: Displayed all the mock users information to the profile tab and implemented logout functionality.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Secured Routes**: Made secured routes so that only the authenticated user can access particular screens.
+
+- Stored the authenticated users data in the AuthContext so that it can be used in various compoments.
+
+
+
+
+
+
+**BONUS TASKS COMPLETED**: 
+
+    - Product Search: users can search for a particular product
+    - Implement pull-to-refresh on the home page for better user experience.
+
+
+
+
